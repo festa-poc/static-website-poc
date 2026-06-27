@@ -4,18 +4,18 @@
   const MOCK_DATA_AFTER = {
     status: "after",
     event: {
-      title: "さくら小学校 秋のバザー ラッフル抽選",
-      date: "2026年10月18日",
-      venue: "さくら小学校 体育館",
-      description: "ラッフル券の当選番号をこちらのページで確認できます。",
-      beforeMessage: "抽選結果は14:00以降に公開予定です。お手元のラッフル券を大切に保管してください。",
-      afterMessage: "当選された方は、ラッフル券を持って受付までお越しください。"
+      title: "みどり小学校 夏まつり ラッフル抽選会",
+      date: "2026年7月25日",
+      venue: "みどり小学校 校庭 特設テント",
+      description: "夏まつりラッフル券の当選番号をこちらのページで確認できます。",
+      beforeMessage: "抽選結果は17:30以降に公開予定です。お手元のラッフル券を大切に保管してください。",
+      afterMessage: "当選された方は、ラッフル券を持って景品交換テントまでお越しください。"
     },
     input: { numberLength: 4, placeholder: "例：0123" },
     prizes: [
-      { name: "A賞：お楽しみギフトセット", winningNumbers: ["0007", "0123", "0456"] },
-      { name: "B賞：文房具セット", winningNumbers: ["0011", "0234", "0789"] },
-      { name: "C賞：お菓子セット", winningNumbers: ["0033", "0555", "0999"] }
+      { name: "特賞：ファミリー防災セット", winningNumbers: ["0007", "0123", "0456"] },
+      { name: "A賞：図書カードセット", winningNumbers: ["0011", "0234", "0789"] },
+      { name: "B賞：お菓子詰め合わせ", winningNumbers: ["0033", "0555", "0999"] }
     ]
   };
 
