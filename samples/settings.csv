@@ -1,0 +1,10 @@
+key,value
+status,before
+title,さくら小学校 秋のバザー ラッフル抽選
+date,2026年10月18日
+venue,さくら小学校 体育館
+description,ラッフル券の当選番号をこちらのページで確認できます。
+beforeMessage,抽選結果は14:00以降に公開予定です。
+afterMessage,当選された方は、ラッフル券を持って受付までお越しください。
+numberLength,4
+placeholder,例：0123

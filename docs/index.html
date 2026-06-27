@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ラッフル抽選結果</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card" aria-labelledby="event-title">
+      <p class="eyebrow">小学校バザー ラッフル抽選</p>
+      <h1 id="event-title">読み込み中...</h1>
+      <dl class="event-meta">
+        <div><dt>開催日</dt><dd id="event-date">-</dd></div>
+        <div><dt>会場</dt><dd id="event-venue">-</dd></div>
+      </dl>
+      <p id="event-description" class="description"></p>
+      <div id="status-message" class="notice" role="status"></div>
+    </section>
+
+    <section id="results-section" class="card hidden" aria-labelledby="results-title">
+      <h2 id="results-title">当選番号</h2>
+      <div id="prize-list" class="prize-list"></div>
+    </section>
+
+    <section id="checker-section" class="card hidden" aria-labelledby="checker-title">
+      <h2 id="checker-title">あなたのくじ番号を入力してください</h2>
+      <form id="raffle-form" class="checker-form" novalidate>
+        <label class="sr-only" for="ticket-number">くじ番号</label>
+        <input id="ticket-number" name="ticket-number" inputmode="numeric" autocomplete="off" placeholder="例：0123">
+        <button type="submit">確認する</button>
+      </form>
+      <div id="check-result" class="check-result" aria-live="polite"></div>
+    </section>
+
+    <section id="error-section" class="card error hidden" role="alert"></section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
